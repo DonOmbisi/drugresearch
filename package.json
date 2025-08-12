@@ -11,11 +11,6 @@
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
     "@rdkit/rdkit": "^2023.9.2-1.0.0",
-    "@xmtp/content-type-reaction": "^1.1.9",
-    "@xmtp/content-type-remote-attachment": "^1.1.9",
-    "@xmtp/content-type-reply": "^1.1.11",
-    "@xmtp/message-kit": "^0.0.9",
-    "@xmtp/react-sdk": "^8.0.1",
     "ably": "^2.3.1",
     "apexcharts": "^3.45.2",
     "bcrypt": "^5.1.1",
@@ -35,9 +30,11 @@
     "next-auth": "^4.24.7",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
-    "react-apexcharts": "^1.4.1",
+    "react-apexcharts": "1.4.1",
     "react-dom": "^18",
-    "resend": "^3.5.0"
+    "resend": "^3.5.0",
+    "viem": "^2.33.3",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",

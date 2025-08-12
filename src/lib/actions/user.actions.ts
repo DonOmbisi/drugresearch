@@ -25,16 +25,21 @@ export async function createUser(user: CreateUserParams) {
       userBio: user.userBio || "",
     });
 
-    const verificationUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/verify-email?token=${newUser._id}`;
-    await sendVerificationEmail(
-      newUser.email,
-      newUser.firstName || "User",
-      verificationUrl,
-    );
+    try {
+      const verificationUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/verify-email?token=${newUser._id}`;
+      await sendVerificationEmail(
+        newUser.email,
+        newUser.firstName || "User",
+        verificationUrl,
+      );
+    } catch (emailError) {
+      // Log email error but don't fail user creation
+      handleError(emailError);
+      console.warn('Email verification failed, but user was created successfully');
+    }
 
     return JSON.parse(JSON.stringify(newUser));
   } catch (error: any) {
-    console.log(error);
     handleError(error);
     throw new Error(
       error.message || "An error occurred during user registration",
