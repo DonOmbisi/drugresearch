@@ -1,8 +1,10 @@
 import mongoose, { Mongoose } from "mongoose";
 
-const MONGODB_URL = process.env.MONGODB_URL;
+const MONGODB_URL = process.env.MONGODB_URI || process.env.MONGODB_URL;
 
-console.log(MONGODB_URL);
+if (!MONGODB_URL) {
+  console.warn("MongoDB URL not found in environment variables");
+}
 
 interface MongooseConnection {
   conn: Mongoose | null;
