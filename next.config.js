@@ -2,11 +2,9 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove standalone output for serverless
   experimental: {
     serverComponentsExternalPackages: ['@rdkit/rdkit']
   },
-  // Optimize for serverless
   swcMinify: true,
   compress: true,
   webpack(config, { isServer }) {
