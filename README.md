@@ -25,13 +25,7 @@
 5. 🧬 [Protein Data Processing](#protein-data)
 6. 🚀 [More](#more)
 
-## 🚨 Tutorial
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@albertmends/videos" target="_blank"><b>Code with Albert</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-## <a name="introduction">🤖 Introduction</a>
 
 **ProteinBind** is a drug discovery and protein-binding prediction tool built with the latest in machine learning and natural language processing (NLP) technology. Powered by NVIDIA NIM and protein structure prediction models, this project enables users to simulate molecular interactions and predict protein structures.
 
@@ -129,4 +123,5 @@ Stay tuned for more updates and features! Join our community, contribute to the 
 If you have any questions or need support, feel free to join our Discord server or contact us through GitHub Discussions.
 
 <a href="https://discord.com/channels/1221368900579754074/1221368901162631243" target="_blank">Join Discord</a> | <a href="https://github.com/mendsalbert/proteinbind/discussions" target="_blank">GitHub Discussions</a>
+
 
